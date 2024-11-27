@@ -1,18 +1,19 @@
 {
-	"name": "clicker",
-	"version": "1.0.0",
-	"main": "game.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"description": "",
-	"dependencies": {
-		"cors": "^2.8.5",
-		"dotenv": "^16.4.5",
-		"express": "^4.21.1",
-		"mongoose": "^8.8.3"
-	}
+  "name": "spasskcombat",
+  "version": "1.0.0",
+  "description": "Fullstack проект с фронтендом и бэкендом",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "next build",
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "vercel": "^23.1.2"
+  }
 }
