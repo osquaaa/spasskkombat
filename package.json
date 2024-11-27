@@ -1,8 +1,8 @@
 {
-  "name": "spasskcombat",
+  "name": "spasskkombat",
   "version": "1.0.0",
   "description": "Fullstack проект с фронтендом и бэкендом",
-  "main": "index.js",
+  "main": "game.js",
   "scripts": {
     "start": "node server.js",
     "build": "next build",
