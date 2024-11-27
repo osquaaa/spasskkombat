@@ -8,7 +8,7 @@ let multiplier = 1
 // Функция для обновления данных пользователя
 async function fetchUser() {
 	try {
-		const response = await fetch(`http://localhost:5000/user/${username}`)
+		const response = await fetch(`/user/${username}`)
 		if (!response.ok) {
 			throw new Error('Пользователь не найден')
 		}
@@ -25,7 +25,7 @@ async function fetchUser() {
 // Функция для получения топа пользователей
 async function fetchTopUsers() {
 	try {
-		const response = await fetch('http://localhost:5000/top-users')
+		const response = await fetch('/top-users')
 		if (!response.ok) {
 			throw new Error('Ошибка при получении топа пользователей')
 		}
@@ -55,7 +55,7 @@ fetchTopUsers()
 // Функция для клика по монете
 async function clickCoin() {
 	try {
-		const response = await fetch(`http://localhost:5000/click/${username}`, {
+		const response = await fetch(`/click/${username}`, {
 			method: 'POST',
 		})
 		if (!response.ok) {
@@ -74,7 +74,7 @@ async function clickCoin() {
 async function buyClickUpgrade() {
 	try {
 		const response = await fetch(
-			`http://localhost:5000/upgrade/click/${username}`,
+			`/upgrade/click/${username}`,
 			{ method: 'POST' }
 		)
 		if (!response.ok) {
@@ -93,7 +93,7 @@ async function buyClickUpgrade() {
 async function buyDoubleUpgrade() {
 	try {
 		const response = await fetch(
-			`http://localhost:5000/upgrade/double/${username}`,
+			`/upgrade/double/${username}`,
 			{ method: 'POST' }
 		)
 		if (!response.ok) {
