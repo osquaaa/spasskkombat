@@ -8,7 +8,7 @@ let multiplier = 1
 // Функция для обновления данных пользователя
 async function fetchUser() {
 	try {
-		const response = await fetch(`/user/${username}`)
+		const response = await fetch(`https://spasskkombat.vercel.app/user/${username}`)
 		if (!response.ok) {
 			throw new Error('Пользователь не найден')
 		}
@@ -25,7 +25,7 @@ async function fetchUser() {
 // Функция для получения топа пользователей
 async function fetchTopUsers() {
 	try {
-		const response = await fetch('/top-users')
+		const response = await fetch('https://spasskkombat.vercel.app/top-users')
 		if (!response.ok) {
 			throw new Error('Ошибка при получении топа пользователей')
 		}
@@ -55,7 +55,7 @@ fetchTopUsers()
 // Функция для клика по монете
 async function clickCoin() {
 	try {
-		const response = await fetch(`/click/${username}`, {
+		const response = await fetch(`https://spasskkombat.vercel.app/click/${username}`, {
 			method: 'POST',
 		})
 		if (!response.ok) {
